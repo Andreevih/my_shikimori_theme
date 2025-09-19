@@ -6,9 +6,9 @@ body {
   background: var(--bckg-primary);
 }
 :root {
-  --bckg-primary: #212121;
-  --bckg-dark: #1a1a1a;
-  --bckg-light: #333333;
+  --bckg-primary: #1b1715; /*#212121;*/
+  --bckg-dark: #171006; /*#1a1a1a;*/
+  --bckg-light: #292420; /*#333333;*/
   --bckg-lighter: #454545;
 
   --txt-primary: #fff;
@@ -35,7 +35,7 @@ body {
   /* Активность на сайте бары */
   --bar-main: var(--my-clr);
 
-  --my-clr: #5292d2;
+  --my-clr: #c69026; /*#5292d2*/;
   --dropdown: initial;
 
   --xmas-clr: initial;
@@ -68,6 +68,36 @@ html[data-color-mode="light"] {
     margin-bottom: 15px;
     padding: 15px 10px 0 10px;
   }
+
+  /* Аниме */
+  /* Не моя вина, что я не популярна */
+  [href*="animes/z16742-"] {
+    --show-default: 0;
+    --custom-image: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/anime/watamote.jpg);
+  }
+  .b-db_entry img[src*="animes/z16742/"] {
+    content: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/anime/watamote.jpg);	
+  }
+  
+  /* Манга */
+
+  /* Персонажи */
+  /* Неко АРК*/
+  [href*="characters/46809-"] { 
+    --show-default: 0;
+    --custom-image: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/charecter/neco.jpg);
+  }
+   .b-db_entry img[src*="characters/46809/"] {
+    content: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/charecter/neco.jpg);	
+  }
+  /* Зерие */
+  [href*="characters/211285-"] {
+    --show-default: 0;
+    --custom-image: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/charecter/serie.jpg);
+  }
+  .b-db_entry img[src*="characters/211285/"] {
+    content: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/charecter/serie.jpg);
+  }
 }
 
 
@@ -94,6 +124,10 @@ header.head .notice,
 .p-profiles.p-profiles-show .profile-actions :is(.mail, .settings, .ban) {
   color: var(--header-color);
   text-shadow: 2px 2px 4px var(--text-shadow-color);
+}
+
+.p-profiles .profile-head .c-history {
+  background: rgba(1, 1, 1, 0.3);
 }
 
 /* #main */
