@@ -1,3 +1,5 @@
+@import url(https://css-club.web.app/css/custom_posters.min.css);
+
 html,
 body {
   color-scheme: dark;
@@ -27,6 +29,9 @@ body {
 
   --def-icon: url("//shikimori.one/assets/layouts/l-top_menu-v2/glyph.svg");
 
+  --header-color: #fcfcfc;
+  --text-shadow-color: rgba(0, 0, 0, 0.8);
+
   /* Активность на сайте бары */
   --bar-main: var(--my-clr);
 
@@ -51,6 +56,44 @@ html[data-color-mode="light"] {
   --headline-hover-color: var(--my-clr);
   --headline-background-color: var(--bckg-primary);
   --headline-border-color: var(--clr-main-primary);
+}
+
+/* Ассеты сайта */
+@media screen and (min-width: 0px) {
+  .p-profiles.p-profiles-show .profile-head {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/main.jpg);
+    margin-bottom: 15px;
+    padding: 15px 10px 0 10px;
+  }
+}
+
+
+/* user #main page */
+.p-profiles.p-profiles-show .l-page {
+  padding: 0px;
+}
+.p-profiles.p-profiles-show .profile-head {
+  margin-bottom: 15px;
+  padding: 15px 10px 0 10px;
+}
+.p-profiles.p-profiles-show .profile-content {
+    padding: 0px 10px 0 10px;
+}
+
+/* Имя пользователя */
+.p-profiles.p-profiles-show header.head h1,
+.p-profiles.p-profiles-show header.head h2 {
+  color: var(--header-color);
+}
+/* Дополнительная информация об пользователе */
+header.head .notice,
+.p-profiles .profile-head .c-brief header .notice span:after,
+.p-profiles.p-profiles-show .profile-actions :is(.mail, .settings, .ban) {
+  color: var(--header-color);
+  text-shadow: 2px 2px 4px var(--text-shadow-color);
 }
 
 /* #main */
@@ -355,10 +398,10 @@ h4,
   --link-color: color-mix(in srgb, var(--first), #fff 60%);
   --link-hover-color: color-mix(in srgb, var(--first), #fff 70%);
   &.anime {
-    --first: green;
+    --first: #c69026;
   }
   &.manga {
-    --first: purple;
+    --first: #a31616;
   }
   &.lifetime {
     --first: var(--bar-main);
@@ -1040,7 +1083,7 @@ body[data-locale] .b-new_marker {
 }
 /* dropdown menu background*/
 .l-top_menu-v2 .menu-dropdown > span[tabindex] {
-  background: color-mix(in srgb, var(--dropdown, var(--bckg-dark)) 80%, white);
+  background: transparent;
 }
 .l-top_menu-v2 .menu-icon:is(:active, :focus),
 .l-top_menu-v2 .menu-dropdown.active > span[tabindex],
