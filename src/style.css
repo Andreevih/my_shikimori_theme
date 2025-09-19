@@ -116,7 +116,6 @@ html[data-color-mode="light"] {
 }
 /* Set different #elements to text #secondary  */
 .b-tag,
-header.head .notice,
 .b-stats_bar .title,
 :is(.b-user_rate, .b-catalog_entry-tooltip) .inner :is(.rating .text, .rating),
 .b-catalog_entry .cover .misc span,
@@ -237,8 +236,6 @@ header.head .notice,
 h2,
 h3,
 h4,
-header.head h1,
-header.head h2,
 .b-news_wall-topic .title /* #main a>div */ {
   color: var(--link-primary);
 }
@@ -1069,9 +1066,6 @@ body[data-locale] .b-new_marker {
 }
 
 /* #forum header  */
-header.head {
-  border-bottom: 2px solid var(--bckg-primary);
-}
 header.head h1 a.back:before,
 header.head h2 a.back:before {
   color: var(--txt-secondary);
