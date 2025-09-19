@@ -70,6 +70,14 @@ html[data-color-mode="light"] {
   }
 
   /* Аниме */
+  /* Фрирен */
+  [href*="animes/52991-"] {
+    --show-default: 0;
+    --custom-image: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/anime/friren.jpg);
+  }
+  .b-db_entry img[src*="animes/52991/"] {
+    content: url(https://raw.githubusercontent.com/Andreevih/my_shikimori_theme/refs/heads/main/src/img/anime/friren.jpg);
+  }
   /* Не моя вина, что я не популярна */
   [href*="animes/z16742-"] {
     --show-default: 0;
